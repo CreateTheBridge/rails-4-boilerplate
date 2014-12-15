@@ -35,10 +35,12 @@ gem 'paper_trail'                   # Record versioning functionality
 
 
 # Front-end Frameworks
-gem 'sass-rails'                    # SASS file compilation
+gem 'normalize-rails'
+gem 'sass-rails', '5.0.0.beta1'     # SASS file compilation
+gem 'compass-rails'                 # Compass support
+gem 'susy'                          # Susy grids
 gem 'coffee-rails'                  # CoffeeScript support
 gem 'jquery-rails'                  # jQuery
-gem 'foundation-rails', '5.4.3.1'   # Foundation 5 CSS framework
 gem 'font-awesome-sass'             # Font-awesome icon fonts
 gem 'ruby-haml-js'                  # haml.js templating engine
 gem 'uglifier'                      # Asset minification
@@ -46,20 +48,21 @@ gem 'autoprefixer-rails'            # autoprefixes vendor prefixes
 gem 'active_link_to'                # Wrapper around link_to
 gem 'turbolinks'                    # Async page loading
 gem 'jquery-turbolinks'             # Async page loading with javascript
-gem 'ember-rails'                   # Rails gem for Ember Applications
-gem 'ember-source'                  # Ember source
+# gem 'ember-rails'                   # Rails gem for Ember Applications
+# gem 'ember-source'                  # Ember source
 
 
 
 group :development do
   gem 'bullet'                      # Monitoring for N+1 queries
-  gem 'brakeman'                    # @TODO: What does this do?
+  gem 'brakeman'                    # Security vulnerability scanner
   gem 'erb2haml'                    # Easy conversion from erb2haml
   gem 'pry-rails'                   # Replace IRB with Pry
   gem 'git-deploy'                  # Easy deployment
   gem 'quiet_assets'                # Remove asset errors from the console
   gem 'better_errors'               # Show errors in a better manor
   gem 'binding_of_caller'           # Deeper stack traces for errors
+  gem 'interface', :git => 'https://github.com/CreateTheBridge/Interface.git'
 end
 
 # Development and Testing assets
@@ -80,8 +83,7 @@ group :production do
 end
 
 
-# @TODO: Include your own gems
-
+# @TODO: Include your own gem
 
 
 

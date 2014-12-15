@@ -1,0 +1,14 @@
+%nav.top-bar-container
+  Interface
+  .top-bar
+    .hover-menu
+      %span
+        = current_user.email
+        %i.fa.fa-caret-down
+      %ul.sub-navigation
+        %li
+          = link_to 'Home' , root_path
+        %li
+          = link_to 'Logout', destroy_user_session_path, :method=>'delete'
+    %a.right-off-canvas-toggle
+      %i.fa.fa-bars

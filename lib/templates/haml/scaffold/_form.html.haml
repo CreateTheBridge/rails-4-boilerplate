@@ -1,0 +1,11 @@
+= simple_form_for(@<%= singular_table_name %>) do |f|
+  = f.error_notification
+  .large-12.columns
+<%- attributes.each do |attribute| -%>
+  <%- if attribute.reference? -%>
+    = f.association :<%= attribute.name %>, collection: <%= attribute.name.camelize%>.all, label_method: lambda {|obj| obj.inspect }
+  <%- else -%>
+    = f.input :<%= attribute.name %>
+  <%- end -%>
+<%- end -%>
+    = f.button :submit, class: 'button right'

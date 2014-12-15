@@ -1,0 +1,57 @@
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+// Typographic Tags
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  color: $font-color;
+  background-color: $body-background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  color: $header-font-color;
+}
+
+p {
+  margin: 1.5em 0;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  color: $font-color;
+}
+
+hr {
+  border-bottom: 1px solid $border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 0 0.5em 1em;
+  color: scale_color($font-color, $lightness: 15%);
+  border-left: 3px solid $border-color;
+}
+
+cite {
+  font-style: italic;
+  color: scale_color($font-color, $lightness: 30%);
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+// Establish Baseline
+@include establish-baseline;

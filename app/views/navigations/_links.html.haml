@@ -1,0 +1,10 @@
+- if user_signed_in?
+  = active_link_to 'Dashboard', root_path, active: :exclusive, wrap_tag: :li
+  = active_link_to 'Example', root_path, wrap_tag: :li
+  -#= active_link_to content_tag(:i,nil, :class=> 'fa fa-terminal'), root_path, active: :exclusive, wrap_tag: :li
+  -#= active_link_to content_tag(:i,nil, :class=> 'fa fa-keyboard-o'), boxes_path, wrap_tag: :li
+- else
+  %li
+    = link_to 'Sign up', new_user_registration_path
+  %li
+    = link_to 'Login', new_user_session_path
