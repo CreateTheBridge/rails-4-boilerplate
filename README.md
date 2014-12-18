@@ -8,13 +8,13 @@ Follow these steps to create a new project and get up and going in a matter of m
 
 **Clone the Shift project.**
 ```
-> git clone https://github.com/CreateTheBridge/Shift <ENTER NEW APPLICATION NAME (WIHTOUT SPACES)>
+> git clone https://github.com/CreateTheBridge/Shift <ENTER NEW APPLICATION NAME (WITHOUT SPACES)>
 ```
 **Create a copy of the .env.template file and rename it to .env to manage your environment variables.**
 ```
 > cp .env.template .env
 ```
-**Update the .env file with the appropriate information of the new application.**
+**Update the .env file with the appropriate information for the new application.**
 ```ruby
 # Example .env file content
 # Web server config
