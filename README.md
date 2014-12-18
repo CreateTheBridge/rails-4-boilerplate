@@ -10,6 +10,12 @@ Follow these steps to create a new project and get up and going in a matter of m
 ```
 > git clone https://github.com/CreateTheBridge/Shift <ENTER NEW APPLICATION NAME (WITHOUT SPACES)>
 ```
+**Specify the ruby version and the gemset you wish to use through RVM**
+```
+> rvm --ruby-version use <version>@<gemset>
+# Example
+> rvm --ruby-version use 2.1.3@shift
+```
 **Create a copy of the .env.template file and rename it to .env to manage your environment variables.**
 ```
 > cp .env.template .env
