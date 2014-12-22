@@ -238,6 +238,7 @@ GEM
       rack-accept
       rack-mount
       virtus (>= 1.0.0)
+    grape-cherry (0.0.2)
     haml (4.1.0.beta.1)
       tilt
     haml-rails (0.6.0)
@@ -273,6 +274,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.2)
+    lumberjack (1.0.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mandrill-api (1.0.53)
@@ -473,11 +475,13 @@ DEPENDENCIES
   gibbon
   git-deploy
   grape
+  grape-cherry
   haml-rails
   interface!
   jquery-rails
   jquery-turbolinks
   kaminari
+  lumberjack
   mandrill-api
   newrelic_rpm
   normalize-rails

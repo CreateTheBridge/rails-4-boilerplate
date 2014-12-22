@@ -13,8 +13,10 @@ gem 'ruby-terminfo'                 # Terminal info
 gem 'awesome_print'                 # Print awesomely
 gem 'rails'                         # Ruby on Rails
 gem 'grape'                         # Web API Framework
+gem 'grape-cherry'                  # RESTful API Generation
 gem 'rack-contrib'                  # Rack-enabled JSONP support
 gem 'rack-cors'                     # Rack-enabled CORS support
+gem 'lumberjack'                    # Advanced Logging Utility
 gem 'redis-rails'                   # Redis stuff!
 gem 'haml-rails'                    # haml templating enginge
 gem 'delayed_job_active_record'     # Background job processing framework
@@ -60,7 +62,7 @@ group :development do
   gem 'pry-rails'                   # Replace IRB with Pry
   gem 'git-deploy'                  # Easy deployment
   gem 'quiet_assets'                # Remove asset errors from the console
-  gem 'better_errors'               # Show errors in a better manor
+  gem 'better_errors'               # Show errors in a better man7or
   gem 'binding_of_caller'           # Deeper stack traces for errors
   gem 'interface', :git => 'https://github.com/CreateTheBridge/Interface.git'
 end
@@ -84,6 +86,7 @@ end
 
 
 # @TODO: Include your own gem
+
 
 
 
