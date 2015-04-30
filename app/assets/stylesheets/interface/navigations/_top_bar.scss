@@ -1,6 +1,6 @@
 // Top bar
 nav.top-bar-container {
-  padding: 1.25em;
+  padding: 1.5em;
   color: $topbar-color;
   background-color: $topbar-background-color;
 
@@ -28,9 +28,10 @@ nav.top-bar-container {
       color: $topbar-color-hover;
     }
 
-    .hover-menu-list{
+    .hover-menu-list {
+      padding-top: 2em;
       display: block;
-      top: 3em;
+      top: 1.25em;
       right: 0;
     }
   }
@@ -48,7 +49,7 @@ nav.top-bar-container {
 }
 
 // Dropdown list
-.hover-menu-list{
+.hover-menu-list {
   @extend %drop-down-list;
 
   a {

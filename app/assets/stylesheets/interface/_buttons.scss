@@ -1,10 +1,9 @@
 // Buttons
 %button {
-  padding: 1em 2em;
+  padding: 0.9em 2em;
   display: inline-block;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
-  line-height: normal;
   color: $button-color;
   background-color: $button-background-color;
   border: $button-border $button-border-color;

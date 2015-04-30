@@ -1,7 +1,7 @@
 // Forms
 %input {
-  width: 100%;
-  padding: 0.5em;
+  margin: 0.425em 0;
+  padding: 0.45em;
   display: block;
   color: $form-color;
   background-color: $form-background-color;
@@ -61,8 +61,9 @@ input[type="radio"] {
 }
 
 label {
-  padding-bottom: 0.75em;
+  display: block;
   font-weight: $label-weight;
+  font-size: rem-calc(15);
   color: $label-color;
 
   abbr {

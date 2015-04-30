@@ -1,4 +1,5 @@
-@import 'normalize-rails';
+@import 'normalize';
+@import 'modular-scale';
 @import 'compass/typography/vertical_rhythm';
 @import 'susy';
 @import 'functions';
@@ -14,4 +15,6 @@
 @import 'plans';
 @import 'flashes';
 @import 'states';
+@import 'tables';
 @import 'navigations/navigations';
+@import 'footer';

@@ -1,12 +1,11 @@
 %state {
-  color: $state-color;
-  padding: 0.2em 0;
-  margin: 0 1.5em;
+  width: 10em;
+  padding: 0.5em 0;
+  font-weighT: 600;
   font-size: 0.875em;
-  width: 7em;
+  color: $state-color;
   border-radius: $round-edges;
   text-align: center;
-  font-weighT: 600;
 }
 
 li.state-green  {

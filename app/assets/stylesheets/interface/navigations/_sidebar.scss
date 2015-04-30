@@ -22,6 +22,7 @@ nav.sidebar-container {
   @extend %sidebar;
 
   li {
+    font-size: $ms-base;
     font-family: $font-family;
     font-weight: $font-weight;
     color: $font-color;
@@ -36,7 +37,7 @@ nav.sidebar-container {
 
     a {
       margin: 0;
-      padding: 1em 1em;
+      padding: 1.5em 1.5em;
       display: block;
       color: $sidebar-color;
 

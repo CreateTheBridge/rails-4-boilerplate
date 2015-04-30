@@ -1,12 +1,8 @@
-= content_for :section_title do
+.<%= singular_table_name.titleize %>-show-container
   %h1 Show&nbsp;<%= singular_table_name.titleize %>
-
-.row
-  .show-container
-    .large-12.columns
-    <% attributes.reject(&:password_digest?).each do |attribute| %>
-      %p
-        %b <%= attribute.human_name %>
-        = @<%= singular_table_name %>.<%= attribute.name %>
-    <% end %>
-      = link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>),  class: 'button right'
+  <% attributes.reject(&:password_digest?).each do |attribute| %>
+    %p
+      %b <%= attribute.human_name %>
+      = @<%= singular_table_name %>.<%= attribute.name %>
+  <% end %>
+    = link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>),  class: 'button right'

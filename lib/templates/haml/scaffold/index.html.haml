@@ -1,22 +1,18 @@
-= content_for :section_title do
+.<%= plural_table_name.titleize %>-index-container
   %h1 Listing&nbsp;<%= plural_table_name.titleize %>
+  - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
+    .list-item
+      %ul
+      <% attributes.reject(&:password_digest?).each do |attribute| %>
+        %li
+          = <%= singular_table_name %>.<%= attribute.name %>
+      <% end %>
+        %ul
+          %li
+            = link_to 'Show', <%= singular_table_name %>
+          %li
+            = link_to content_tag(:i,nil, :class=> 'fa fa-pencil'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
+          %li
+            = link_to content_tag(:i,nil, :class=> 'fa fa-times'), <%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' }
 
-.full-row
-  .index-container
-    .large-12.columns
-      - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
-        .list-item
-          %ul.inline-list
-          <% attributes.reject(&:password_digest?).each do |attribute| %>
-            %li
-              = <%= singular_table_name %>.<%= attribute.name %>
-          <% end %>
-            %ul.inline-list.right
-              %li
-                = link_to 'Show', <%= singular_table_name %>
-              %li
-                = link_to content_tag(:i,nil, :class=> 'fa fa-pencil'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
-              %li
-                = link_to content_tag(:i,nil, :class=> 'fa fa-times'), <%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' }
-
-      = link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path, class: 'button right'
+  = link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path, class: 'button right'

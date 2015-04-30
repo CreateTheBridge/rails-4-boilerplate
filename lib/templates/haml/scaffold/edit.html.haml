@@ -1,6 +1,3 @@
-= content_for :section_title do
+.<%= singular_table_name.titleize %>-edit-container
   %h1 Edit&nbsp;<%= singular_table_name.titleize %>
-
-.row
-  .edit-container
-    = render 'form'
+  = render 'form'

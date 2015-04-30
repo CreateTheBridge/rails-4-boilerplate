@@ -6,6 +6,10 @@ ul, ol, dl {
   outline: none;
 }
 
+li {
+  display: block;
+}
+
 dl {
   dt {
     font-weight: bold;

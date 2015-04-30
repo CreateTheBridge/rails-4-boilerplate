@@ -13,7 +13,7 @@ gem 'ruby-terminfo'                 # Terminal info
 gem 'awesome_print'                 # Print awesomely
 gem 'rails'                         # Ruby on Rails
 gem 'grape'                         # Web API Framework
-gem 'grape-cherry'                  # RESTful API Generation
+gem 'cherry'                        # RESTful API Generation
 gem 'rack-contrib'                  # Rack-enabled JSONP support
 gem 'rack-cors'                     # Rack-enabled CORS support
 gem 'lumberjack'                    # Advanced Logging Utility

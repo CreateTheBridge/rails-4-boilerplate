@@ -26,6 +26,6 @@ $susy: (
   )
 );
 
-.container {
-  @include container(80em);
+main {
+  overflow: hidden;
 }
