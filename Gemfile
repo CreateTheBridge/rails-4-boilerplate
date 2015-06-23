@@ -41,6 +41,7 @@ gem 'normalize-rails'
 gem 'sass-rails', '5.0.0.beta1'     # SASS file compilation
 gem 'compass-rails'                 # Compass support
 gem 'susy'                          # Susy grids
+gem 'modular-scale'                 # Modular scales for typography
 gem 'coffee-rails'                  # CoffeeScript support
 gem 'jquery-rails'                  # jQuery
 gem 'font-awesome-sass'             # Font-awesome icon fonts

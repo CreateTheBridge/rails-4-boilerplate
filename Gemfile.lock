@@ -486,6 +486,7 @@ DEPENDENCIES
   kaminari
   lumberjack
   mandrill-api
+  modular-scale
   newrelic_rpm
   normalize-rails
   paper_trail
