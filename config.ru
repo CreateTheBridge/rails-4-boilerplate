@@ -14,14 +14,13 @@ if ENV['RAILS_ENV'] == 'production'
   oom_min = (240) * (1024**2)
   oom_max = (260) * (1024**2)
 
-  unless ENV['MIN_WORKER_MEMORY'].blank?
-    oom_min = ENV['MIN_WORKER_MEMORY'].to_i
-  end
-
-  unless ENV['MAX_WORKER_MEMORY'].blank?
-    oom_max = ENV['MAX_WORKER_MEMORY'].to_i
-  end
-
+  # unless ENV['MIN_WORKER_MEMORY'].blank?
+  #   oom_min = ENV['MIN_WORKER_MEMORY'].to_i
+  # end
+  #
+  # unless ENV['MAX_WORKER_MEMORY'].blank?
+  #   oom_max = ENV['MAX_WORKER_MEMORY'].to_i
+  # end
 
   # Max memory size (RSS) per worker
   use Unicorn::WorkerKiller::Oom, oom_min, oom_max

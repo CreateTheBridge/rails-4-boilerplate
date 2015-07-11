@@ -2,7 +2,7 @@ worker_processes Integer(ENV['MAX_WORKER_PROCESSES'] || 3)
 if ENV['IDE_PROCESS_DISPATCHER']
   timeout 30 * 60 * 60 * 24
 else
-  timeout 15
+  timeout 60
 end
 preload_app true
 
@@ -38,6 +38,3 @@ after_fork do |server, worker|
     Rails.logger.info('Connected to Redis')
   end
 end
-
-
-
