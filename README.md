@@ -1,4 +1,4 @@
-## Shift - A pivot to the application generation paradigm.
+## Rails 4 Boilerplate
 
 The concept of Shift is to revolutionize the application setup and development lifecycle by providing a robust mix of pre-configured assets and tool sets in an easy to use package.
 
@@ -6,9 +6,9 @@ The concept of Shift is to revolutionize the application setup and development l
 
 Follow these steps to create a new project and get up and going in a matter of minutes.
 
-**Clone the Shift project.**
+**Clone the project.**
 ```
-> git clone https://github.com/CreateTheBridge/Shift <ENTER NEW APPLICATION NAME (WITHOUT SPACES)>
+> git clone https://github.com/CreateTheBridge/rails-4-boilerplate <ENTER NEW APPLICATION NAME (WITHOUT SPACES)>
 ```
 **Specify the ruby version and the gemset you wish to use through RVM**
 ```
