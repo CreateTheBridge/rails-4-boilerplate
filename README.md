@@ -2,6 +2,10 @@
 
 The concept of Shift is to revolutionize the application setup and development lifecycle by providing a robust mix of pre-configured assets and tool sets in an easy to use package.
 
+#### Need help getting started?
+
+[![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/joshuatyree?utm_source=github&utm_medium=button&utm_term=joshuatyree&utm_campaign=github)
+
 #### Usage
 
 Follow these steps to create a new project and get up and going in a matter of minutes.
